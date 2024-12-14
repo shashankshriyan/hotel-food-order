@@ -20,10 +20,10 @@ function Nvbar({setShowLogin}) {
                 <h1>Kinara</h1>
             </Link>
       <ul className="navbar-menu">
-        <Link to='/' onClick={()=>setMenu("home")} className={menu==='home'?'active':''}>home</Link>
-        <a href='#explore-menu' onClick={()=>setMenu("menu")}className={menu==='menu'?'active':''}>menu</a>
+        <Link to='/' onClick={()=>setMenu("home")} className={menu==='home'?'active':''}>HOME</Link>
+        <a href='#explore-menu' onClick={()=>setMenu("menu")}className={menu==='menu'?'active':''}>MENU</a>
         
-        <a href='#footer' onClick={()=>setMenu("contact-us")}className={menu==='contact-us'?'active':''}>contact-us</a>
+        <a href='#footer' onClick={()=>setMenu("contact-us")}className={menu==='contact-us'?'active':''}>CONTACT-US</a>
     </ul>
     <div className="navbar-right">
         
@@ -35,7 +35,7 @@ function Nvbar({setShowLogin}) {
        :<div className='navbar-profile'>
           <img src={assets.profile_icon} alt="profile" />
           <ul className="nav-profile-dropdown">
-            <li onClick={()=>navigate('/myorders')}><img src={assets.bag_icon} alt="" /><p>Orders</p></li>
+            <li onClick={()=>navigate('/myorders')}><img src={assets.bag_icon} alt="" /><p>orders</p></li>
             <hr/>
             <li onClick={logout}><img src={assets.logout_icon} alt="" /><p>Logout</p></li>
           </ul>
